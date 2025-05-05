@@ -1,5 +1,5 @@
 document.getElementById('scholarshipForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+    // event.preventDefault(); // Prevent form submission
   
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -13,5 +13,6 @@ document.getElementById('scholarshipForm').addEventListener('submit', function(e
       // You can add code here to send the data to a server
     } else {
       alert('Please fill out all fields.');
+      event.preventDefault();
     }
   });
